@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+    <title>Fight Anaemia</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+    <!--------------------------------------navbar----------------------------------------->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="{{url_for('static', filename='images/logo.jpg')}}" alt="logo">
+                <div class="navbar-brand" href="#"
+                    style="font-family: sans-serif; color: whitesmoke;font-style: italic; font-weight: bold;">
+                    Immune&Inspired</div>
+            </div>
+            <!--<div class="navbar-brand" href="#">Webname</div>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/#read">Read</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predict">Predict</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contactus">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#aboutus">About Us</a>
+                    </li>
+                    <button class="dark-light" onclick="myFunction()"
+                        style="background-color: transparent; border: none; color: #f3c0d0;"><i class="fa fa-adjust"
+                            aria-hidden="true"></i></button>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!------------------------------------------end of navbar----------------------------------------------->
+
+    <!--==================================================================================================-->
+
+    <section id="causes" style="text-align: justify; margin-bottom: 4%;"data-aos="fade-up">
+        <div class="container">
+            <h1 style="text-align: center; font-family: serif;">A Brief Take Away</h1>
+            <center><span style="font-style: italic;">(<strong>NOTE:</strong> We suggest you to consult a doctor or a professional before going further) </span></center>
+            <p style="text-align: justify;">
+                <span style="font-weight: bold;">
+                    <h3 style="font-style: italic;">Causes </h3>
+                </span> <br>
+                Anaemia is a condition in which the number of red blood cells or the haemoglobin concentration within
+                them is lower than normal. Haemoglobin is needed to carry oxygen and if you have too few or abnormal red
+                blood cells, or not enough haemoglobin, there will be a decreased capacity of the blood to carry oxygen
+                to the body’s tissues. This results in symptoms such as fatigue, weakness, dizziness and shortness of
+                breath, among others. The optimal haemoglobin concentration needed to meet physiologic needs varies by
+                age, sex, elevation of residence, smoking habits and pregnancy status. The most common causes of anaemia
+                include nutritional deficiencies, particularly iron deficiency, though deficiencies in folate, vitamins
+                B12 and A are also important causes; haemoglobinopathies; and infectious diseases, such as malaria,
+                tuberculosis, HIV and parasitic infections. Anaemia is a serious global public health problem that
+                particularly affects young children and pregnant women. WHO estimates that 42% of children less than 5
+                years of age and 40% of pregnant women worldwide are anaemic.
+            </p>
+            <p>
+                <span style="font-weight: bold;">
+                    <h3 style="font-style: italic;">What Causes Anaemia?</h3>
+                </span> <br>
+                Dietary iron, vitamin B-12, and folate are essential for red blood cells to mature in the body.
+                Normally, 0.8 to 1 percent of the body’s red blood cells are replaced every day, and the average
+                lifespan for red cells is 100 to 120 days. Any process that has a negative effect on this balance
+                between red blood cell production and destruction can cause anaemia. Causes of anaemia are generally
+                divided into those that decrease red blood cell production and those that increase red blood cell
+                destruction.
+            </p>
+            <p>
+                <span style="font-weight: bold;">
+                    <h5 style="font-style: italic;">Factors that decrease red blood cell production</h5>
+                </span> <br>
+                The things that typically decrease red blood cell production, causing anaemia, include:<br>
+            <div class="container">
+                • Inadequate stimulation of red blood cell production by the hormone erythropoietin, which is produced
+                by the kidneys<br>
+                • Inadequate dietary intake of iron, vitamin B-12, or folate<br>
+                • Hypothyroidism<br>
+            </div>
+            </p>
+            <p>
+                <span style="font-weight: bold;">
+                    <h5 style="font-style: italic;">Factors that decrease red blood cell production</h5>
+                </span> <br>
+                On the other hand, any disorder that destroys red blood cells at a rate faster than they’re made can
+                cause anaemia. This typically occurs due to haemorrhaging, which can happen because of:<br>
+            <div class="container">
+                • Endometriosis<br>
+                • Accidents<br>
+                • Gastrointestinal lesions<br>
+                • Menstruation<br>
+                • Childbirth<br>
+                • Excessive uterine bleeding<br>
+                • Surgery<br>
+                • Cirrhosis, which involves scarring of the liver<br>
+                • Fibrosis (scar tissue) within the bone marrow<br>
+                • Haemolysis, a rupture of red blood cells that can occur with some medications or Rh
+                incompatibility<br>
+                • Disorders of the liver and spleen<br>
+                • Genetic disorders such as:<br>
+                <div class="container">
+                    o Glucose-6-phosphate dehydrogenase (G6PD) deficiency<br>
+                    o Thalassemia<br>
+                    o Sickle cell anaemia<br>
+                </div>
+            </div>
+            Overall, however, iron deficiency is the most common cause of anaemia. It accounts for nearly half of all
+            anaemia cases, and is a major nutritional disorder worldwide.<br>
+
+            </p>
+
+        </div>
+    </section>
+    <hr>
+
+    <!----------------------------------------------------------------------------------------------------------------------------->
+
+    <section id="symptoms" style="margin-top: 3%;margin-bottom: 4%;text-align: justify;"data-aos="fade-up">
+        <div class="container">
+            <p style="text-align: justify;">
+                <span style="font-weight: bold;">
+                    <h3 style="font-style: italic;">Symptoms</h3>
+                </span> <br>
+                Anaemia can cause a range of symptoms including fatigue, weakness, dizziness and drowsiness. Children
+                and pregnant women are especially vulnerable, with an increased risk of maternal and child mortality.
+                The prevalence of anaemia remains high globally, particularly in low-income settings, where a
+                significant proportion of young children and women of childbearing age can be assumed to be anaemic.
+                Iron deficiency anaemia has also been shown to affect cognitive and physical development in children and
+                reduce productivity in adults.<br>
+
+                Anaemia is an indicator of both poor nutrition and poor health. It is problematic on its own, but it can
+                also impact other global nutritional concerns such as stunting and wasting, low birth weight and
+                childhood overweight and obesity due to lack of energy to exercise. School performance in children and
+                reduced work productivity in adults due to anaemia can have further social and economic impacts for the
+                individual and family.
+
+            </p>
+            <p>
+                <span style="font-weight: bold;">
+                    <h3 style="font-style: italic;">What are the symptoms of anaemia?</h3>
+                </span> <br>
+
+                People with anaemia appear pale and may often complain of being cold.<br>
+                They may also experience:<br>
+            <div class="container">
+                • Light headedness or dizziness, especially when active or standing up<br>
+                • Unusual cravings, such as wanting to eat ice, clay, or dirt<br>
+                • Trouble concentrating or tiredness<br>
+                • Constipation<br>
+            </div>
+            Some types of anaemia can cause inflammation of the tongue, resulting in a smooth, glossy, red, and often
+            painful tongue.<br>
+            If anaemia is severe, fainting may occur. Other symptoms include:<br>
+            <div class="container">
+                • Brittle nails<br>
+                • Shortness of breath<br>
+                • Chest pains<br>
+            </div>
+            Blood oxygen levels can be so low that a person with severe anaemia can have a heart attack.<br>
+            If you get a physical exam and you have anaemia, your results may show:<br>
+            <div class="container">
+                • High or low blood pressure<br>
+                • Pale skin<br>
+                • Jaundice<br>
+                • An increased heart rate<br>
+                • A heart murmur<br>
+                • Enlarged lymph nodes<br>
+                • An enlarged spleen or liver<br>
+                • Atrophic glossitis of tongue<br>
+            </div>
+            People with signs or symptoms of anaemia should seek medical attention, especially if fainting or chest
+            pains occur.<br><br>
+            <span style="font-weight: bold;">
+                <h3 style="font-style: italic;">How is anaemia diagnosed?</h3>
+            </span> <br>
+
+            A diagnosis of anaemia begins with both your health history and your family health history, along with a
+            physical exam.<br>
+            A family history of certain types of anaemia such as sickle cell anaemia can be helpful. A history of
+            exposure to toxic agents in the home or workplace might point to an environmental cause.<br>
+            Laboratory tests are often what’s used to help doctors find out the cause of the anaemia.<br><br>
+
+
+
+            <span style="font-weight: bold;">Tests to diagnose anaemia include:</span><br>
+            <div class="container">
+                • Complete blood count (CBC). The CBC blood test shows the number and size of the red blood cells. It
+                also shows if levels of other blood cells like white blood cells and platelets are normal.<br>
+                • Serum iron levels. This blood test shows if iron deficiency is the cause of anaemia.<br>
+                • Ferritin test. This blood test analyses iron stores.<br>
+                • Vitamin B-12 test. This blood test shows vitamin B-12 levels and helps your doctor determine if
+                they’re too low.<br>
+                • Folic acid test. This blood test reveals if serum folate levels are low.<br>
+                • Stool test for occult blood. This test applies a chemical to a stool specimen to see if blood is
+                present. If the test is positive, it means that blood is being lost somewhere in the gastrointestinal
+                tract, from the mouth to the rectum. Problems like stomach ulcers, ulcerative colitis, and colon cancer
+                can cause blood in stool.<br><br>
+            </div>
+            <span style="font-weight: bold;">Additional tests</span><br>
+            Based on the results of these tests, doctors may order additional tests such as:<br>
+            <div class="container">
+                • An upper GI<br>
+                • A barium enema<br>
+                • Chest X-rays<br>
+                • A CT scan of your abdomen<br>
+            </div>
+
+            </p>
+
+        </div>
+    </section>
+    <hr>
+    <!--------------------------------------------------------------------------------------------------------------------->
+    <section id="treatment" style="text-align: justify; margin-top: 3%; margin-bottom: 4%;"data-aos="fade-up">
+        <div class="container">
+            <p style="text-align: justify;">
+                <span style="font-weight: bold;">
+                    <h3 style="font-style: italic;">Treatment</h3>
+                </span> <br>
+                While iron deficiency anaemia is the most common form and is relatively easy to treat through dietary
+                changes, other forms of anaemia require health interventions that may be less accessible. Accurate
+                characterisation of anaemia is critical to understand the burden and epidemiology of this problem, for
+                planning public health interventions, and for clinical care of people across the life course. <br>
+                WHO oversees several programmes across all WHO Regions to help reduce the prevalence of anaemia through
+                treatment and prevention. These guidelines, policies and interventions aim to increase dietary
+                diversity, improve infant feeding practices and improve the bioavailability and intake of micronutrients
+                through fortification or supplementation with iron, folic acid and other vitamins and mineral. Social
+                and behaviour change communication strategies are used to change nutrition-related behaviours.
+                Interventions to address the underlying and basic causes of anaemia look at issues such as disease
+                control, water, sanitation and hygiene, reproductive health and root causes such as poverty, lack of
+                education and gender norms. <br>
+
+                In 2016, WHO started a five-year project to review its global guidelines for haemoglobin cut-offs used
+                to define anaemia with the aim to provide evidence-informed recommendations on assessing anaemia in
+                individuals and populations. <br>
+                Anaemia impairs health and wellbeing in women and increases the risk of maternal and neonatal adverse
+                outcomes. Anaemia affects half a billion women of reproductive age worldwide. In 2011, 29% (496 million)
+                of non-pregnant women and 38% (32.4 million) of pregnant women aged 15–49 years were anaemic.<br>
+                The prevalence of anaemia was highest in south Asia and central and west Africa. While the causes of
+                anaemia are variable, it is estimated that half of cases are due to iron deficiency. In some settings,
+                considerable reductions in the prevalence of anaemia have been achieved; however, overall, progress has
+                been insufficient. Further actions are required to reach the World Health Assembly target of a 50%
+                reduction of anaemia in women of reproductive age by 2025.<br>
+            </p>
+            <p>
+                <span style="font-weight: bold;">
+                    <h4 style="font-style: italic;">How to treat anaemia?</h4>
+                </span> <br>
+                Treating anaemia depends on what’s causing it.<br>
+                Anaemia caused by inadequate amounts of dietary iron, vitamin B-12, and folate is treated with
+                nutritional supplements. In some cases, injections of B-12 are needed as it isn’t absorbed properly from
+                the digestive tract.<br>
+                Your doctor and nutritionist can prescribe a diet that contains the proper amounts of vitamins,
+                minerals, and other nutrients. A proper diet can help prevent this kind of anaemia from recurring.<br>
+                In some cases, if the anaemia is severe, doctors use erythropoietin injections to increase red blood
+                cell production in the bone marrow. If bleeding occurs or the haemoglobin level is very low, a blood
+                transfusion may be necessary.<br>
+
+            </p>
+            <p>
+                <span style="font-weight: bold;">
+                    <h4 style="font-style: italic;">What’s the outlook for anaemia?</h4>
+                </span> <br>
+                The long-term outlook for anaemia depends on the cause and the response to treatment. Anaemia is very
+                treatable, but it can be dangerous if it’s left untreated.<br>
+                Pay attention to food labels and invest in a multivitamin to ensure that you’re getting the recommended
+                daily amount of iron.<br>
+                Talk to your doctor if you’re experiencing any symptoms of anaemia, especially if you have a family
+                history of it. Your doctor will most likely get you started on a diet or supplement regimen to increase
+                your iron intake.<br>
+                An iron deficiency may also be a sign of more serious medical conditions, so it’s important to pay
+                attention to your body. In most cases, just tweaking your diet or taking an iron supplement can solve
+                your anaemia.<br>
+
+            </p>
+        </div>
+    </section>
+
+
+
+    <!----------------------------------------------------------------------------------------------------------------------------->
+    <footer style="text-align: center;">
+        <div class="center"> Copyright &copy; Immune&Inspired 2021. All rights reserved. </div>
+    </footer>
+    
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 900
+        });
+    </script>
+</body>
+
+</html>

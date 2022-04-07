@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='home.css')}}">
+    <title>Immune&Inspired</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
+
+    <!--------------------------------------navbar----------------------------------------->
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
+        <div class="container-fluid">
+            <div class="logo">
+                <img src="{{url_for('static', filename='images/logo.jpg')}}" alt="logo">
+                <div class="navbar-brand" href="#" style="font-family: sans-serif; color: whitesmoke;font-style: italic; font-weight: bold;">Immune&Inspired</div>
+            </div>
+            <!--<div class="navbar-brand" href="#">Webname</div>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link " href="/">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="/#read">Read</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/predict">Predict</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#contactus">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/#aboutus">About Us</a>
+                    </li>
+                    <button class="dark-light" onclick="myFunction()"
+                        style="background-color: transparent; border: none; color: #f3c0d0;"><i class="fa fa-adjust"
+                            aria-hidden="true"></i></button>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!------------------------------------------end of navbar----------------------------------------------->
+
+    <!--==================================================================================================-->
+
+    <!---------------------------------------------main home ----------------------------------------------->
+
+    <div class="bgimg">
+
+        <div class="container text-center headerset">
+            <div class="intro">
+                <div class="tlt" >
+                    <h2 style="opacity: 1;">To live without hope is to cease to live
+                        - Dostoyevsky
+                    </h2>
+                    <h1 style="opacity: 1; font-size: 6vw;"> Immune&Inspired</h1>
+                    <p style="opacity: 1;">Anaemia and its cup of Despair<br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------------------------end of main home------------------------------------------------>
+
+    <!--==================================================================================================-->
+
+    <!---------------------------------------------read data------------------------------------------------>
+
+    <section id="read" class="read text-center">
+        <div class="container">
+            <h1 data-aos="fade-up">DID YOU CONTRACT IT??</h1>
+            <p style="font-style: italic;" data-aos="fade-up"> Anaemia is the most common blood condition in India, as
+                many as 68.4% children and 66.4% women surveyed suffered from anaemia. Women, young
+                children, and people with long-term diseases are more likely to have anaemia.</p>
+            <div class="clk" data-aos="fade-up"><a class="readbt" href="/read">Read</a> </div>
+            <!--<a href="#" class="btn-flip" data-back="Back" data-front="Front"></a>-->
+            <div class="row rowsetting">
+                <div class="col-md" data-aos="fade-up">
+                    <div class="img-setting d-block m-auto">
+                        <a href="/read"><i class="fa fa-question text-white" style="font-size:55px;"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <h2>Causes</h2>
+                    <p> There are more than 400 types of anaemia, and they’re divided into three groups:
+                        Anaemia caused by blood loss, 
+                        Anaemia caused by decreased or faulty red blood cell production, 
+                        Anaemia caused by destruction of red blood cells
+                        </p>
+                </div>
+                <div class="col-md" data-aos="fade-up">
+                    <div class="img-setting d-block m-auto">
+                        <a href="/read#symptoms"><i class="fa fa-search-plus text-white" style="font-size:53px;"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <h2>Symptoms</h2>
+                    <p> The signs of anaemia can be so mild that you might not even notice them. At a certain point, as your blood cells decrease, symptoms often develop like:
+                        Fast or unusual heartbeat,
+                    	Headache,
+                    	Problems with growth, for children and teens,
+                        Skin that’s pale or yellow
+                        
+                        </p>
+                </div>
+                <div class="col-md" data-aos="fade-up">
+                    <div class="img-setting d-block m-auto">
+                        <a href="/read#treatment"><i class="fa fa-medkit text-white" style="font-size:53px;"
+                                aria-hidden="true"></i></a>
+                    </div>
+                    <h2>Treatment</h2>
+                    <p> Your treatment will depend on your type of anaemia. There are lot of causes, so there are also many treatments available. Including various home remedies but we suggest to go to a professional for routine check-up. </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------------------end of read data------------------------------------------------>
+
+    <!--==================================================================================================-->
+
+    <!---------------------------------------------Statistics data------------------------------------------>
+
+    <section class="statistics text-center">
+        <h1 data-aos="fade-up">Bringing light to the problem</h1>
+        <p style="font-style: italic;" data-aos="fade-up"> Anaemia in children and women worsened in the past
+            half-a-decade across most states and Union territories, <br>according to the latest National Family Health
+            Survey (NFHS).
+            <br>And to put it simply anaemia If left untreated, iron-deficiency anaemia can cause serious health
+            problems. Having too little oxygen in the body <br>can damage organs. With anaemia, the heart must work
+            harder to make up for the lack of red blood cells or haemoglobin. This extra work can harm the heart.
+
+        </p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm" style="margin: 5px; border: black;" data-aos="fade-up">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="width: 100%; height: 400px;">
+                                <img src="{{url_for('static', filename='images/s1.jpg')}}" class="d-block" style="width: 100%; height: 100%;"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item" style="width: 100%; height: 400px;">
+                                <img src="{{url_for('static', filename='images/map3.png')}}" class="d-block" style="width: 100%; height: 100%;"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item" style="width: 100%; height: 400px;">
+                                <img src="{{url_for('static', filename='images/s2.png')}}" class="d-block" style="width: 100%; height: 100%;"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item" style="width: 100%; height: 400px;">
+                                <img src="{{url_for('static', filename='images/map2.png')}}" class="d-block" style="width: 100%; height: 100%;"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-sm" style="margin: 5px;" data-aos="fade-up">
+                    <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" style="width: 100%; height: 400px;">
+                                <img src="{{url_for('static', filename='images/s4.jpeg')}}" class="d-block" style="width: 100%; height: 100%;"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item" style="width: 100%; height: 400px;">
+                                <img src="{{url_for('static', filename='images/map1.png')}}" class="d-block" style="width: 100%; height: 100%;"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item" style="width: 100%; height: 400px;">
+                                <img src="{{url_for('static', filename='images/s3.png')}}" class="d-block" style="width: 100%; height: 100%;"
+                                    alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <p style="font-style: italic; margin-top: 4%;"><span style="font-weight: bold;">NOTE: </span>All charts, figures, and plots are based on data provided by the World Health Organization (WHO) in the public domain.</p>
+        </div>
+    </section>
+
+
+
+
+    <!--------------------------------------end of statistics data------------------------------------------>
+
+    <!--==================================================================================================-->
+
+    <!---------------------------------------------contact us----------------------------------------------->
+
+    <section class="overlay" id="contactus" style="padding-top: 5%; padding-bottom: 5%;">
+        <div class="contact-bg">
+            <div class="container">
+                <form style="max-width: 700px; align-self: center;" data-aos="fade-up" action="/contact" method="POST">
+                    <h1>
+                        <center>Talk to Us</center>
+                    </h1>
+                    <div class="row">
+                        <div class="col-sm">
+                            <div class="mb-2">
+                                <label for="exampleInputName" class="form-label"
+                                    style="color: rgb(8, 8, 8)">Name</label>
+                                <input type="text" class="form-control" id="InputName" name="name" required>
+
+                            </div>
+                        </div>
+                        <div class="col-sm">
+                            <div class="mb-2">
+                                <label for="exampleInputEmail" class="form-label"
+                                    style="color: rgb(8, 8, 8)">Email</label>
+                                <input type="email" class="form-control" id="InputEmail" name="email" required>
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="mb-4">
+                            <label for="exampleInputFeedback" class="form-label"
+                                style="color: rgb(8, 8, 8)">Feedback</label>
+                            <textarea type="text" class="form-control" name="feedback" id="feedback" rows="5" required></textarea>
+                        </div>
+                    </div>
+                    <button type="submit" class="frmsub" name="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!--------------------------------------end of contact us----------------------------------------------->
+
+    <!--==================================================================================================-->
+
+    <!---------------------------------------------About us------------------------------------------------->
+
+    <section id="aboutus" class="aboutus">
+        <div class="container text-center">
+            <h1 data-aos="fade-up">Our Amazing Team</h1>
+            <p style="font-style: italic;" data-aos="fade-up"> We are but a group of teenagers who wish to see the world
+                happier today than it was yesterday, to usher <br>the world towards a brighter future with a tinge of
+                humanity.</p>
+            <div class="container" style="margin-top: 7%;">
+                <div class="row" style="padding-bottom: 5%;">
+                    <div class="col-sm" style="margin-bottom: 6%;" data-aos="fade-up">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <figure class="figure">
+                                        <img src="{{url_for('static', filename='images/palak.jpg')}}" class="figure-img img-fluid rounded-circle"
+                                            style="width: 250px; height: 250px;">
+                                        <figcaption>
+                                            <h4>Palak Agarwal</h4>
+                                            <p class="figure-caption">Thakur College of Engineering and Technology</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>
+                                        Children as we call them are anything but children, they are our future and if
+                                        an infinitesimal portrayal of humanity can bring a colossal light to a better
+                                        future then, Let there be light!
+                                        <br>“Children are the living messages we send to a time we will not see.”
+                                        <br><span style="text-align: right;"> — JFK.</span>
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm" style="margin-bottom: 6%;" data-aos="fade-up">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <figure class="figure">
+                                        <img src="{{url_for('static', filename='images/khushi.jpg')}}" class="figure-img img-fluid rounded-circle"
+                                            style="width: 250px; height: 250px;">
+                                        <figcaption>
+                                            <h4>Khushi Bhoj</h4>
+                                            <p class="figure-caption">Thakur College of Engineering and Technology</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>
+                                        As a feminist myself I believe that the world tries to change and women are now
+                                        closer to a much sought equality however the spread of such malicious diseases
+                                        affecting in such greater numbers to women simply wounds me.
+                                        <br>As Maya Angelou once said
+                                        <br>“We are the dream and the hope of the world and so
+                                        we rise, we rise, we rise”
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm" style="margin-bottom: 2%;" data-aos="fade-up">
+                        <div class="flip-card">
+                            <div class="flip-card-inner">
+                                <div class="flip-card-front">
+                                    <figure class="figure">
+                                        <img src="{{url_for('static', filename='images/kuldeep.jpeg')}}" class="figure-img img-fluid rounded-circle"
+                                            style="width: 250px; height: 250px;">
+                                        <figcaption>
+                                            <h4>Kuldeep Choksi</h4>
+                                            <p class="figure-caption">Thakur College of Engineering and Technology</p>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                                <div class="flip-card-back">
+                                    <p>
+                                        Why shall humankind suffer more than its already have? Why shall a giant be
+                                        defeated by such minor damages?
+                                        <br>Shakespeare said- <br>“Hell is empty and all it’s devils are here” in
+                                        1610.<br>
+                                        The veracious question shall be what can we do instead of why, as all it
+                                        requires is a push, a small step for a man, a cosmic step for mankind
+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!--------------------------------------end of About us------------------------------------------------->
+
+    <!--==================================================================================================-->
+
+    <!---------------------------------------------Footer--------------------------------------------------->
+
+    <footer style="text-align: center;">
+        <div class="center"> Copyright &copy; Immune&Inspired 2021. All rights reserved. </div>
+    </footer>
+
+
+    <script>
+        function myFunction() {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 200,
+            duration: 900
+        });
+    </script>
+
+
+
+
+    <!--------------------------------------end of footer------------------------------------------------>
+
+
+
+
+</body>
+
+</html>
